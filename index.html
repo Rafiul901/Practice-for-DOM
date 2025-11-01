@@ -1,0 +1,48 @@
+<!-- number 1 -->
+<h1 id="title">My name is Good guy</h1>
+<script>
+    const guy = document.getElementById("title");
+    guy.innerText="I don't know"
+</script>
+
+<!-- number 2 -->
+<h1 id="coloring">Color test</h1>
+<script>
+    const title =document.getElementById("coloring");
+    title.style.color ='blue'
+</script>
+
+
+<!-- number 3 -->
+<h1 id="msg">Before click</h1>
+<button id ='btn'>Click me</button>
+
+<script>
+const msg = document.getElementById('msg');
+const btn = document.getElementById('btn');
+
+btn.addEventListener('click', ()=>{
+    msg.innerText="Button will be clicked"
+})
+</script>
+
+<!-- number 4 -->
+<p id="text">You can hide me!</p>
+<button id="toggle">Hide</button>
+
+<script>
+    const text = document.getElementById("text");
+    const toggle = document.getElementById("toggle");
+
+toggle.addEventListener("click", ()=>{
+    if(text.style.display === "none"){
+        text.style.display ="block";
+        toggle.innerText="Hide";
+
+    }
+    else{
+        text.style.display="none";
+        toggle.innerText ="Show";
+    }
+})
+</script>
