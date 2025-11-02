@@ -11,7 +11,19 @@
     <button id="passBtn">Show Password</button>
 
     <script>
-        
+        const passwordInput = document.getElementById('passwordInput');
+        const button = document.getElementById('passBtn');
+
+        button.addEventListener('click', ()=>{
+            if(passwordInput.type === "password"){
+                passwordInput.type ="text";
+                button.innerText ='Hide Password';
+
+            }else{
+                passwordInput.type="password";
+                button.innerText ="Show Password"
+            }
+                })
     </script>
 </body>
 </html>
