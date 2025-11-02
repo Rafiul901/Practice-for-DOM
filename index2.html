@@ -10,5 +10,18 @@
 </head>
 <body>
     <img id="myImage" src="https://i.ibb.co.com/DDYk213f/image-search-1552851235503.jpg" alt="Example Pic">
+    <br>
+    <button id="toggleBtn">Hide Image</button>
+
+    <script>
+        const image = document.getElementById("myImage");
+        const button =document.getElementById("toggleBtn");
+
+       button.addEventListener('click',()=>{
+        image.classList.toggle('hidden');
+        button.innerText = image.classList.contains("hidden")? "Show":"Hide"
+       });
+
+    </script>
 </body>
 </html>
