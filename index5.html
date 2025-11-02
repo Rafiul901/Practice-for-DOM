@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body style="text-align: center; padding: 50px;">
+    <div id="box"></div>
+    <button id="colorBtn">Red</button>
+    <script>
+        const box =document.getElementById('box');
+        const button=document.getElementById('colorBtn');
+
+        button.addEventListener('click',()=>{
+            box.style.backgroundColor =box.style.backgroundColor === 'red'? 'green': 'red';
+            
+            if(box.style.backgroundColor ==='red'){
+button.innerText ='Green';
+
+            }
+            else{
+    button.innerText='Red'
+}
+        })
+    </script>
+</body>
+</html>
