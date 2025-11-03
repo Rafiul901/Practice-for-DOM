@@ -1,0 +1,27 @@
+<h1 id="count">0</h1>
+<button id="inc">Increase</button>
+<button id="dec">Decrease</button>
+<button id="reset">Reset</button>
+
+<script>
+const count= document.getElementById('count');
+const inc= document.getElementById('inc');
+const dec= document.getElementById('dec');
+const reset= document.getElementById('reset');
+
+inc.addEventListener('click',()=>{
+    count.innerText=Number(count.innerText)+1;
+
+});
+
+dec.addEventListener('click', ()=>{
+    count.innerText = Number(count.innerText)-1;
+
+    reset.addEventListener("click", ()=>{
+        count.innerText=0;
+    })
+})
+
+
+
+</script>
