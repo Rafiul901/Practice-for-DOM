@@ -2,5 +2,11 @@
 <button id="showTime">Show Time</button>
 
 <script>
-    
+    const time = document.getElementById('time');
+    const btn = document.getElementById('showTime');
+
+    btn.addEventListener('click', ()=>{
+        const now = new Date();
+        time.innerText = now.toLocaleTimeString();
+    })
 </script>
