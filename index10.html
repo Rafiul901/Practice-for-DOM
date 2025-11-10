@@ -8,8 +8,19 @@
 <body style="text-align:center; padding: 50px;">
     <h2>Change Background Color</h2>
     <button id="colorBtn">Change Color</button>
+<script>
+    const btn = document.getElementById('colorBtn');
+    const colors =["lightblue", 'lightgreen', 'lightpink', 'lightyellow'];
 
-    
+btn.addEventListener('click', ()=>{
+    const random = Math.floor(Math.random()*colors.length);
+    document.body.style.backgroundColor=colors[random];
+})
+
+
+
+    </script>
+
     
 </body>
 
