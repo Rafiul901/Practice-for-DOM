@@ -1,0 +1,16 @@
+<h1 id="message">Hello!</h1>
+<input type="text" id="inputBox" placeholder="Type something....">
+<button id="changeBtn">Change Text</button>
+
+<script>
+     const message = document.getElementById("message");
+  const inputBox = document.getElementById("inputBox");
+  const button = document.getElementById("changeBtn");
+
+  button.addEventListener('click', ()=>{
+    const text = inputBox.value;
+    message.innerText = text? text: "Hello!"
+    inputBox.value="";
+  })
+
+</script>
