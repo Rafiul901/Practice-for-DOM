@@ -6,6 +6,14 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h2>Double Click me!</h2>
+
+    <script>
+        const message =document.getElementById('message');
+
+        message.addEventListener('dblclick',()=>{
+            message.innerText ='You double-clicked me!';
+        message.style.color ='red'        })
+    </script>
 </body>
 </html>
