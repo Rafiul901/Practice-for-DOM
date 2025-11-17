@@ -12,4 +12,39 @@ function isPalindrome(str){
 // console.log(isPalindrome('madam'));
 
 //3
+function countVowels(str){
+    let count =0;
+    let vowels ='aeiouAEIOU';
+    for(let char of str){
+        if(vowels.includes(char)){
+            count =count+1;
+        }
+    }
+    return count;
+}
+// console.log(countVowels('good'));
 
+//4
+function coutConsonants(str){
+    let count =0;
+    let vowels ='aeiouAEIOU';
+for(let char of str){
+    if(!vowels.includes(char))
+        count++;
+}
+return count;
+}
+// console.log(coutConsonants('hello'));
+
+//5
+
+function longestWord(sentence){
+    let words = sentence.split(' ')
+    let maxWord = '';
+    for(let word of words){
+        if(word.length> maxWord.length)
+            maxWord=word;
+    }
+    return maxWord;
+}
+console.log(longestWord('I love programming'));
