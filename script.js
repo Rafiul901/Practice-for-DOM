@@ -5,3 +5,11 @@ function reverseString(str){
 }
 // console.log(reverseString('what'));
 
+//2
+function isPalindrome(str){
+    return str === str.split('').reverse().join('')
+}
+// console.log(isPalindrome('madam'));
+
+//3
+
