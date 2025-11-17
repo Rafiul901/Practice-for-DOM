@@ -1,11 +1,7 @@
 //1
-let state ='OFF';
+function reverseString(str){
+    return str.split('').reverse().join('');
 
-function toggleState(){
-    if(state === 'OFF'){
-        state ='ON'
-    }
-    else{
-        state='OFF'
-    }
 }
+// console.log(reverseString('what'));
+
