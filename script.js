@@ -66,4 +66,15 @@ function isAnagram(s1,s2){
     let sorted2 =s2.split('').sort().join('');
     return sorted1 === sorted2;
 }
-console.log(isAnagram('listen','silent'));
+// console.log(isAnagram('listen','silent'));
+
+//8
+function removeDuplicates(str){
+    let result ='';
+    for(let char of str){
+        if(!result.includes(char))
+            result+=char;
+    }
+    return result;
+}
+console.log(removeDuplicates('banana'));
