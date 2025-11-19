@@ -95,4 +95,3 @@ function charFrequency(str) {
     }
     return freq;
 }
-console.log(charFrequency("hello"));
