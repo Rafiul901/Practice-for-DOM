@@ -123,3 +123,10 @@ function reverseArray(arr){
     return arr.reverse();
 }
 // console.log(reverseArray([1,3,5,6,9]));
+
+//15
+
+function sumArray(arr){
+    return arr.reduce((a,b)=>a+b,0)
+}
+// console.log(sumArray([1,2,3,4]));
