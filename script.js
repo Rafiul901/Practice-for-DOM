@@ -95,4 +95,25 @@ function charFrequency(str) {
     }
     return freq;
 }
-// console.log(charFrequency("hello"));
+// console.log(charFrequency("hello"));\
+
+//11
+
+ function maxValue(arr){
+    return Math.max(...arr)
+ }
+//  console.log(maxValue([1,4,5,6]));
+
+//12
+
+function minValue(arr){
+    return Math.min(arr)
+}
+//  console.log(minValue([1,4,4,3]));
+
+//13
+function secondLargest(arr){
+    let unique =[...new Set(arr)].sort((a,b)=>b-a);
+    return unique[1];
+}
+// console.log(secondLargest([1,2,4,5,6]));

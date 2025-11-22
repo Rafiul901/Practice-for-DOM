@@ -7,4 +7,5 @@ for(let char of str){
 }
 return count;
 }
-console.log(countVowels('hello world'));
+// console.log(countVowels('hello world'));
+
