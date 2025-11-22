@@ -117,3 +117,9 @@ function secondLargest(arr){
     return unique[1];
 }
 // console.log(secondLargest([1,2,4,5,6]));
+
+//14
+function reverseArray(arr){
+    return arr.reverse();
+}
+// console.log(reverseArray([1,3,5,6,9]));
