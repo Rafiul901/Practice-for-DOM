@@ -130,3 +130,9 @@ function sumArray(arr){
     return arr.reduce((a,b)=>a+b,0)
 }
 // console.log(sumArray([1,2,3,4]));
+
+//16
+function removeDuplicates (arr){
+    return [...new Set(arr)];
+}
+console.log(removeDuplicates([1,3,5,6,6,2]));
