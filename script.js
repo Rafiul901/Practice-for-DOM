@@ -132,9 +132,11 @@ function sumArray(arr){
 // console.log(sumArray([1,2,3,4]));
 
 //16
-
+function removeDuplicates (arr){
+    return [...new Set(arr)];
+}
 // console.log(removeDuplicates([1,3,5,6,6,2]));
-
+//17
 function countEvenOdd(arr){
     let even =0; odd =0;
     for(let num of arr){
@@ -142,4 +144,6 @@ function countEvenOdd(arr){
     }
     return{even,odd}
 }
-console.log(countEvenOdd([1,2,3,4,5,6]));
+// console.log(countEvenOdd([1,2,3,4,5,6]));
+
+//18
