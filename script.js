@@ -144,6 +144,6 @@ function countEvenOdd(arr){
     }
     return{even,odd}
 }
-// console.log(countEvenOdd([1,2,3,4,5,6]));
+ console.log(countEvenOdd([1,2,3,4,4,5,6]));
 
 //18
