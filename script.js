@@ -156,4 +156,10 @@ function average (arr){
 function positiveNumbers(arr){
     return arr.filter( n => n>0)
 }
-console.log(positiveNumbers([-1,-3,4]));
+// console.log(positiveNumbers([-1,-3,4]));
+
+//20
+function searchIndex (arr,target){
+    return arr.indexOf(target)
+}
+console.log(searchIndex([1,2,3,4],2));
