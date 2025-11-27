@@ -153,6 +153,7 @@ function average (arr){
 // console.log(average([1,2,3,4,5,6]));
 
 //19
-function positiveNumbers(){
-    return 
+function positiveNumbers(arr){
+    return arr.filter( n => n>0)
 }
+console.log(positiveNumbers([-1,-3,4]));
