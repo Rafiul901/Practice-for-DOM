@@ -162,4 +162,12 @@ function positiveNumbers(arr){
 function searchIndex (arr,target){
     return arr.indexOf(target)
 }
-console.log(searchIndex([1,2,3,4],2));
+// console.log(searchIndex([1,2,3,4],2));
+
+//21
+for (let i=0; i<=15; i++ ){
+    if(i%15 ===0) console.log('FixThis');
+    else if(i%5 ===0)console.log('Fix');
+    else if (i%3 ===0) console.log('This');
+    else console.log(i);
+}
