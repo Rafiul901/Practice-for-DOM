@@ -165,9 +165,28 @@ function searchIndex (arr,target){
 // console.log(searchIndex([1,2,3,4],2));
 
 //21
-for (let i=0; i<=15; i++ ){
-    if(i%15 ===0) console.log('FixThis');
-    else if(i%5 ===0)console.log('Fix');
-    else if (i%3 ===0) console.log('This');
-    else console.log(i);
+// for (let i=0; i<=15; i++ ){
+//     if(i%15 ===0) console.log('FixThis');
+//     else if(i%5 ===0)console.log('Fix');
+//     else if (i%3 ===0) console.log('This');
+//     else console.log(i);
+// }
+
+//22
+
+function factorial(n){
+    let res =1;
+    for(let i =2; i<=n; i++)
+        res*=i;
+    return res;
 }
+// console.log(factorial(4));
+
+//23
+function fibonacci (n){
+    let  arr =[0,1];
+    for(let i=2; i<n; i++)
+        arr.push(arr[i-1]+arr[i-2]);
+    return arr.slice(0,n)
+}
+console.log(fibonacci(7));
