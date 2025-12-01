@@ -189,4 +189,16 @@ function fibonacci (n){
         arr.push(arr[i-1]+arr[i-2]);
     return arr.slice(0,n)
 }
-console.log(fibonacci(7));
+// console.log(fibonacci(7));
+
+//24
+function isPrime(n){
+    if(n<2) return false;
+    for( let i =2; i<= Math.sqrt(n); i++)
+    
+        if(n%i === 0){
+            return false;
+        }
+    return true
+}
+console.log(isPrime(2));
