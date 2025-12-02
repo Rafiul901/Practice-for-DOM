@@ -201,4 +201,49 @@ function isPrime(n){
         }
     return true
 }
-console.log(isPrime(2));
+// console.log(isPrime(2));
+
+//25 
+function gcd(a,b){
+    while(b !==0){
+        [a,b] =[b, a%b]
+    }
+    return a;
+}
+// console.log(gcd(12,18));
+
+//26
+function countDigits(n){
+    return n.toString().length;
+}
+// console.log(countDigits(12234));
+
+//27
+function sumDigits(n){
+    return n.toString().split('').reduce((a,b)=> a+Number(b),0);
+}
+// console.log(sumDigits(12345));
+
+//28
+function cToF(c){return (c*9/5)+32}
+function fToC(f){return (f-32)*5/9}
+// console.log(cToF(0),fToC(32));
+
+//29
+function printNums(n=1){
+    if(n>100) return;
+    console.log(n);
+    printNums(n+1);
+}
+printNums();
+
+function calculator(a,b,op){
+    if(op==='+') return a+b;
+    if(op==='-') return a-b;
+    if(op==='*') return a*b;
+    if(op==='/') return a/b;
+}
+console.log(calculator(5,2,'+'));
+console.log(calculator(5,2,'-'));
+console.log(calculator(5,2,'*'));
+console.log(calculator(5,2,'/'));
