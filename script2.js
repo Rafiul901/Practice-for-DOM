@@ -19,4 +19,29 @@ function longestWord(sentence){
     }
     return maxWord
 }
-console.log(longestWord('dude whats up'));
+// console.log(longestWord('dude whats up'));
+
+//6
+function firstNonRepeating(str){
+    for(let i=0; i<str.length; i++){
+        if(str.indexOf(str[i]) === str.lastIndexOf(str[i])) return str[i];
+    }
+    return null;
+}
+// console.log(firstNonRepeating('swiss'));
+
+function removeDuplicates(str){
+    let result ='';
+    for(let char of str){
+        if(!result.includes(char))
+           result+=char;
+    }
+    return result;
+}
+// console.log(removeDuplicates('banana'));
+
+//8
+function capitalize(sentence){
+    return sentence.split(' ').map(word => word[0].toUpperCase()+ word.slice(1)).join(' ')
+}
+console.log(capitalize('hello world'));
