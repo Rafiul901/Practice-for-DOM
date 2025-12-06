@@ -44,4 +44,29 @@ function removeDuplicates(str){
 function capitalize(sentence){
     return sentence.split(' ').map(word => word[0].toUpperCase()+ word.slice(1)).join(' ')
 }
-console.log(capitalize('hello world'));
+// console.log(capitalize('hello world'));
+
+
+//10
+function charFrequency(str){
+    let freq ={};
+    for(let char of str )
+       {
+         freq[char] =(freq[char] || 0)+1;
+       }
+       return freq;
+}
+// console.log(charFrequency('hello'));
+
+//11
+function minValue(arr){
+    return Math.min(...arr);
+}
+// console.log(minValue([1,2,3,4,5]));
+
+function secondLargest(arr){
+    let unique =[ ...new Set(arr)].sort((a,b)=>b-a);
+    return unique[1]
+
+}
+console.log(secondLargest([1,2,3,4]));
