@@ -69,4 +69,86 @@ function secondLargest(arr){
     return unique[1]
 
 }
-console.log(secondLargest([1,2,3,4]));
+// console.log(secondLargest([1,2,3,4]));
+
+//14
+function reverseArray(arr){
+    return arr.reverse()
+}
+// console.log(reverseArray([1,2,3,4]));
+
+//15
+function sumArray (arr){
+    return arr.reduce((a,b)=>a+b,0)
+}
+// console.log(sumArray([1,2,3,4]));
+
+//16
+
+function removeDuplicatesNumber(arr){
+   return [...new Set(arr)]
+}
+// console.log(removeDuplicatesNumber([1,1,2,2,3]));
+
+//17
+function countEvenOdd(arr){
+    let even=0, odd=0;
+    for(let num of arr){
+        if(num%2===0) even++;odd++
+    }
+    return{even,odd}
+}
+// console.log(countEvenOdd([1,2,3,4,5]));
+
+//18
+
+function average(arr){
+    return arr.reduce((a,b)=> a+b,0)/arr.length
+}
+// console.log(average([1,2,3,4]));
+
+//19
+function positiveNumbers(arr){
+    return arr.filter(n => n>0)
+
+}
+// console.log(positiveNumbers([1,2,-4,]));
+
+//20
+function findIndex(arr,target){
+    return arr.indexOf(target)
+}
+// console.log(findIndex([1,2,3,4],2));
+
+//22
+function factorial(n){
+let res =1;
+for(let i=2; i<=n; i++)
+{
+    res = res*i;
+}
+return res;
+}
+// console.log(factorial(5));
+
+//23
+function fibonacci(n){
+let arr =[1,0];
+for(let i=2; i<n; i++)
+{
+    arr.push(arr[i-1]+arr[i-2])
+}
+return arr.slice(0,n)
+}
+// console.log(fibonacci(7));
+
+//24
+function isPrime (n){
+if(n<2) return false;
+for( let i =2; i<=Math.sqrt(n); i++)
+{
+    if(n%i === 0) return false
+}
+return true;
+}
+console.log(isPrime(8));
