@@ -151,4 +151,34 @@ for( let i =2; i<=Math.sqrt(n); i++)
 }
 return true;
 }
-console.log(isPrime(8));
+// console.log(isPrime(8));
+
+//25
+function gcd(a,b){
+    while(b!==0){
+[a,b] =[b, a%b];
+    }
+    return a;
+}
+// console.log(gcd(12,18));
+
+//26
+function countDigits(n){
+    return n.toString().length
+}
+// console.log(countDigits(123456));
+
+//27
+function sumDigits(n){
+ return n.toString().split('').reduce((a,b)=>a+Number(b),0)
+}
+// console.log(sumDigits(12345));
+
+//30
+function calculator (a,b,op){
+    if(op ==='+') return a+b;
+    if(op === '-') return a-b;
+    if(op === '*') return a*b;
+    if( op === '/') return a/b;
+}
+// console.log(calculator(2,3,"*"));
