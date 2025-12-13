@@ -89,7 +89,7 @@ function returnAdult(age){
         return 'Not Adult';
     }
 }
-console.log(returnAdult(10));
+
 
 //15. Return "Child" if age < 18 
 function returnChild(age){
@@ -101,3 +101,66 @@ function returnChild(age){
     }
 }
 
+//16. Check if two numbers are equal 
+function checkNum(a,b){
+    if(a===b){
+        return true;
+    }
+    else return false;
+}
+
+//17. Return greater number
+function greatNum(a,b){
+    if(a>b){
+        return true;
+    }
+    else return false;
+}
+
+//18. Return smaller number 
+function smallNum(a,b){
+     if(a<b){
+        return true;
+    }
+    else return false;
+}
+
+//19. Check if grade ≥ 50 → pass 
+function gradePass(grade){
+    if(grade >= 50){
+        return 'Pass';
+    }
+    else return 'Fail'
+}
+
+//20. Return absolute value 
+function getAbsoluteValue(num){
+    return Math.abs(num)
+}
+
+//21 Length of string
+function lengthOfString(str){
+    return str.length;
+}
+
+//22. First element of an array 
+function firstElm(arr){
+    return arr[0]
+}
+
+//23. Last element of an array 
+function lastElm(arr){
+    return arr[arr.length -1]
+}
+
+//24. Add element to end of array 
+function endArray(arr){
+    
+    arr.push(5)
+    return arr;
+}
+
+//25. Remove last element 
+function removeLastELm(arr){
+    
+}
