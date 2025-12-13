@@ -162,5 +162,35 @@ function endArray(arr){
 
 //25. Remove last element 
 function removeLastELm(arr){
-    
+    return arr.slice(0,arr.length-1)
+}
+
+//26. Check if string contains "a" 
+function containsArray(str){
+    if(str.includes("a"))
+    {
+        return true;
+    }
+    else return false
+}
+
+// 27. Convert string to uppercase 
+function upperCase(str){
+  return str.toUpperCase()
+}
+
+// 28. Convert string to lowercase 
+function lowerCase(str){
+  return str.toLowerCase()
+}
+
+//29. Return second element of array
+function secondElm(arr){
+    return arr[1]
+}
+
+//30.Join array into string 
+function joinArray(arr){
+   
+    return arr.join(' ')
 }
