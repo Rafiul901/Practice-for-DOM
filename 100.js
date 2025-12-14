@@ -194,3 +194,61 @@ function joinArray(arr){
    
     return arr.join(' ')
 }
+
+//31. Sum of array 
+function sumOfArray(arr){
+    let total =0;
+    for( let num of arr){
+       total =total+num; 
+    }
+    return total;
+}
+
+//32. Multiply array elements 
+function multiplyArray(arr){
+    let multiply =1;
+    for(let num of arr){
+        multiply*=num;
+    }
+    return multiply
+}
+
+//33. Count even numbers 
+function countEven(arr){
+let count =0;
+for(let num of arr){
+    if(num%2===0)
+        count++;
+}
+return count;
+}
+
+//34. Count odd numbers 
+function countOdd(arr){
+let count =0;
+for(let num of arr){
+    if(num%2!==0)
+        count++;
+}
+return count;
+}
+
+//35. Find largest number 
+function largestNo(arr){
+    let large =arr[0];
+    for(let num of arr){
+        if(num>large)
+            large = num;
+    }
+return large;
+}
+
+//36. Find smallest number 
+function smallestNo(arr){
+    let small =arr[0];
+    for(let num of arr){
+        if(num<small)
+            small =num;
+    }
+return small;
+}
