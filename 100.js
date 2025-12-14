@@ -252,3 +252,23 @@ function smallestNo(arr){
     }
 return small;
 }
+
+//37. Count numbers > 50 
+function numThat(arr){
+    let count =0;
+    for(let num of arr){
+        if(num>50)
+            count ++;
+    }
+    return count;
+}
+
+//38. Count negative numbers 
+function numNegative(arr){
+    let count =0;
+    for(let num of arr){
+        if(num<0)
+            count ++;
+    }
+    return count;
+}
