@@ -272,3 +272,63 @@ function numNegative(arr){
     }
     return count;
 }
+
+//39. Count positive numbers 
+function numPositive(arr){
+    let count =0;
+    for(let num of arr){
+        if(num>0)
+            count ++;
+    }
+    return count;
+}
+
+//40. Find total marks out of 500 
+function totalMarks(marks){
+    let total =0;
+    for( let i=0; i<marks.length; i++){
+        total+=marks[i];
+
+    }
+    return total;
+}
+
+//41 Clone array
+function clone (arr){
+    let cloneArray =[];
+    for(let num of arr){
+        cloneArray.push(num)
+    }
+    return cloneArray;
+}
+
+//42. Remove negative numbers 
+function eraseNegative(arr){
+    let noNegative =[]
+    for( let num of arr){
+if(num>0)
+noNegative.push(num)
+    }
+    return noNegative;
+}
+
+
+//43. Filter marks ≥ 40 
+function overForty(arr){
+    let overForty =[]
+    for( let num of arr){
+if(num>=40)
+overForty.push(num)
+    }
+    return overForty;
+}
+
+//45. Reverse array (manually) 
+function reverseArray(arr){
+    let reversed =[];
+    for(let i=arr.length -1; i>=0; i--){
+        reversed.push(arr[i])
+    }
+    return reversed;
+}
+
