@@ -332,3 +332,56 @@ function reverseArray(arr){
     return reversed;
 }
 
+//46. Count vowels 
+function countVowel(arr){
+    let vowel = 'aeiouAEIOU'
+    let count =0
+    for (let char of arr){
+ if( vowel.includes(char))
+count++;
+    }
+   return count;
+}
+
+//47. Count consonants 
+function countConsonants(arr){
+    let vowel = 'aeiouAEIOU'
+    let count =0;
+    for (let char of arr){
+ if( !vowel.includes(char))
+count++;
+    }
+   return count;
+}
+
+//48. Reverse string manually 
+function stringReverse(str){
+    let reversed ='';
+    for(let i=str.length-1; i>=0; i--){
+        reversed+=str[i]
+    }
+    return reversed;
+}
+
+//49. Check if palindrome 
+function isPalindrome(str){
+    let reversedWord ='';
+    for(let i=str.length-1; i>=0; i--){
+        reversedWord+=str[i];
+     
+    }
+      
+         if(str === reversedWord){
+return true;
+         }
+            
+       else return false;
+    
+}
+
+//50. Replace all spaces with hyphens 
+function replaceSpace(str){
+    return str.split(' ').join('-')
+}
+console.log(replaceSpace('hel l o'));
+
