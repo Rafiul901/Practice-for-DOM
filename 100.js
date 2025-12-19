@@ -383,5 +383,49 @@ return true;
 function replaceSpace(str){
     return str.split(' ').join('-')
 }
-console.log(replaceSpace('hel l o'));
+
+//51. Count digits in string 
+function countDigit(str){
+    let count =0;
+    for(let i=0; i< str.length; i++){
+        if(str[i]>='0' && str[i]<='9')
+            count++;
+    }
+    return count;
+}
+
+//52. Extract numbers from string 
+ function extractNum(str){
+    let numbers =[]
+    for(let i=0; i<str.length; i++)
+    {
+        if(str[i]>='0' && str[i]<= '9')
+            numbers.push(Number(str[i]))
+    }
+    return numbers;
+ }
+
+ //53.Check if email contains "@" 
+ function email(str){
+   
+        if(str.includes('@'))
+          {
+              return true;
+          }
+   
+    else return false;
+ }
+
+ //54. Check if a word exists in sentence 
+ function wordExists(sentence,word){
+    let words = sentence.split(' ');
+    return words.includes(word)
+ }
+
+ //55. Check if two strings are equal (case insensitive) 
+ function isEqual(str1,str2){
+    return str1.toLowerCase() === str2.toLowerCase()
+ }
+
+ 
 
