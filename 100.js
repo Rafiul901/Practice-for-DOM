@@ -427,5 +427,72 @@ function countDigit(str){
     return str1.toLowerCase() === str2.toLowerCase()
  }
 
+ //56. Find the average of array 
+ function average(arr){
+    let total =0;
+    for( let i=0; i<arr.length; i++){
+        total+=arr[i];
+    }
+    return total/arr.length
+ }
  
+ //57. Find second largest number 
+function secondLarge(arr) {
+    let largest = -Infinity;
+    let second = -Infinity;
+
+    for (let i = 0; i < arr.length; i++) {
+        let num =arr[i];
+        if(num>largest){
+            second =largest;
+            largest =num;
+        }else if(num> second && num<largest){
+            second=num
+        }
+    }
+    return second;
+}
+
+//58. Find second smallest number
+function secondSmall(arr) {
+    let smallest = Infinity;
+    let second = Infinity;
+
+    for (let i = 0; i < arr.length; i++) {
+        let num =arr[i];
+        if(num<smallest){
+            second =smallest;
+            smallest =num;
+        }else if(num< second && num>smallest){
+            second=num
+        }
+    }
+    return second;
+}
+
+
+//59. Remove duplicates from array 
+function removeDuplicates(arr){
+    let unique=[];
+
+    for(let i=0; i<arr.length; i++){
+        if(!unique.includes(arr[i])){
+            unique.push(arr[i])
+        }
+    }
+    return unique;
+}
+
+//60. Merge two arrays 
+function mergeArray(arr1,arr2){
+    let merged=[];
+    for(let i=0; i<arr1.length; i++){
+        merged.push(arr1[i]);
+    }
+    for(let i=0; i<arr2.length; i++){
+        merged.push(arr2[i]);
+    }
+return merged;
+}
+
 
