@@ -494,5 +494,86 @@ function mergeArray(arr1,arr2){
     }
 return merged;
 }
+ 
+//61. Sort numbers (ascending) 
+function sortNum(arr){
+    return arr.sort((a,b)=> a-b)
+}
 
+//62. Sort numbers (descending) 
+function sortNum2(arr){
+    return arr.sort((a,b)=>b-a)
+}
+
+//63. Find index of target 
+function findTarget(arr,target){
+return arr.indexOf(target)
+}
+
+//64. Count frequency of each number
+function countFrequency(arr) {
+    let freq = {};
+for(let i=0; i<arr.length; i++){
+    let num =arr[i];
+    if(freq[num]){
+        freq[num]++;
+    }else{
+        freq[num]=1;
+    }
+}
+return freq;
+}
+
+//65. Check prime number 
+function isPrime(n) {
+ if( n<=1) return false;
+
+ for( i=2;i<=Math.sqrt(n); i++){
+    if(n%i===0)
+    return false;
+ }
+ return true;
+}
+
+//66. Generate a range (1 to n array) 
+function range(n) {
+let result =[];
+for(let i=1; i<=n;i++){
+    result.push(i)
+}
+return result;
+}
+
+//67. Convert Fahrenheit to Celsius
+function fToC(f){
+return (f - 32) * 5 / 9
+}
+
+
+// 68. Convert Celsius to Fahrenheit 
+function cToF(c){
+return (c * 9 / 5) + 32
+}
+
+
+//69. Count divisors of a number 
+function countDivisor(n){
+    let count =0;
+    for(let i=1; i<=n; i++){
+        if(n%i===0){
+            count++;
+        }
+    }
+    return count;
+}
+
+
+//70. Factorial of a number 
+function factorial(n){
+    let result =1;
+    for(let i =1; i<=n; i++){
+result*=i
+    }
+return result;
+}
 
