@@ -577,3 +577,30 @@ result*=i
 return result;
 }
 
+//71. Check valid phone (length 11) 
+function isValid(n){
+ if(typeof n !== 'string') return false;
+ if(n.length !== 11) return false;
+
+ for(let i=0; i<n.length; i++){
+    if(n[i]<"0" || n[i]>'9'){
+        return false;
+    }
+ }
+return true;
+}
+
+//72. Check valid email 
+function isValidEmail(email){
+    if(typeof email !== 'string') return false;
+
+    let atIndex = email.indexOf('@');
+    let dotIndex =email.lastIndexOf('.');
+
+    if(atIndex <= 0) return false;
+    if(dotIndex <= atIndex+1) return false;
+    if(dotIndex === email.length-1) return false;
+
+    return true;
+}
+console.log(isValidEmail('adf@gmail.com'));
