@@ -603,4 +603,23 @@ function isValidEmail(email){
 
     return true;
 }
-console.log(isValidEmail('adf@gmail.com'));
+
+//73. Check strong password 
+function isStrongPassword(password){
+    if( typeof password !== 'string') return false;
+    if(password.length <5) return false;
+
+    let hasUpper = false;
+    let hasLower = false;
+    let hasNumber = false;
+
+    for( let i=0; i<password.length; i++){
+        let ch=password[i];
+
+        if(ch >='A'&& ch<='Z') hasUpper =true;
+        else if(ch >='a'&& ch<='b') hasLower =true;
+        else if(ch >='0'&& ch<='9') hasNumber=true;
+        
+    }
+    return hasUpper && hasLower && hasNumber;
+}
